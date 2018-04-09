@@ -25,7 +25,7 @@ sudo -u postgres psql
 
 CREATE DATABASE djangochat;
 
-CREATE USER djangochatuser WITH PASSWORD 'YOUR_PASSWORD';
+CREATE USER djangochatuser WITH PASSWORD 'YOUR_PASSWORD'; //djangochat01
 
 ALTER ROLE djangochatuser SET client_encoding TO 'utf8';
 
@@ -43,13 +43,13 @@ Setup Django project :
 ```
 git clone https://github.com/ploggingdev/djangochat.git
 
-sudo apt install python3-venv
+sudo apt install python3-venv // sudo apt install python3.6-venv
 
 cd djangochat
 
 mkdir venv
 
-python3 -m venv venv/djangochat
+python3 -m venv venv/djangochat //python3.6 -m venv venv/djangochat
 
 source venv/djangochat/bin/activate
 
@@ -61,7 +61,7 @@ pip install --upgrade pip
 Add environment variables :
 
 ```
-sudo nano ~/.bashrc
+sudo nano ~/.bashrc // Use vim : sudo vim ~/.bashrc
 
 #append the following to the end of the file
 
